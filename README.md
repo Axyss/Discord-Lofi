@@ -112,7 +112,7 @@ npm start # using yarn? --> yarn start
 
 #### Click the button below to deploy this project to Heroku.
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/rit3zh/Discord-Lofi)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rit3zh/Discord-Lofi/tree/main)
 
 ## 🤝 Contributing
 
