@@ -5,12 +5,14 @@ import Footer from "rc-footer"
 import { FaBars, FaTimes, FaHome, FaDiscord } from "react-icons/fa"
 import { SiGoogledocs } from "react-icons/si"
 import "rc-footer/assets/index.css"
+import Promo from "./components/Promo.tsx"
 
 export default function App() {
   return (
     <React.Fragment>
       <Navbar />
       <BodyContent />
+      <Promo />
       <Footer
         columnLayout="space-around"
         columns={[

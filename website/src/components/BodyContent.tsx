@@ -11,7 +11,9 @@ export default function BodyContent() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "60vh",
+          height: "100vh",
+          marginBottom: -200,
+
           flexDirection: "column",
         }}
       >
@@ -51,19 +53,14 @@ export default function BodyContent() {
             flexDirection: "column",
           }}
         >
-          <h3
-            style={{
-              color: "white",
-              fontSize: 20,
-            }}
-          >
+          <h3 className="headingtext">
             Bring Relaxing LoFi Beats to Your Discord Server for Studying,
             Working, or Chilling
           </h3>
           <h3
+            className="headingtext"
             style={{
-              color: "white",
-              fontSize: 20,
+              marginTop: 5,
             }}
           >
             in a Voice Channel
@@ -106,18 +103,14 @@ export default function BodyContent() {
             </div>
           </button>
 
-          <a
-            className="buyButton"
-            target="_blank"
-            href="https://www.buymeacoffee.com/theshubhagrwl"
-          >
+          <button className="buyButton">
             <img
               className="coffeeImage"
               src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
               alt="Buy me a coffee"
             />
             <span className="coffeeButtonText">Buy me a coffee</span>
-          </a>
+          </button>
         </div>
       </div>
       <div

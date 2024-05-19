@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --primary: #4365e0;
@@ -28,7 +29,7 @@
   background-color: #ffff3f;
   border-radius: 10px;
   border: 1px solid white;
-  padding: 10px 25px;
+  padding: 17px 35px;
   font-size: 1rem;
   letter-spacing: 0.6px;
   box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5);
@@ -38,6 +39,12 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .coffeeImage {
@@ -51,4 +58,20 @@
   margin-left: 15px;
   font-size: 0.8rem;
   vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  .headingtext {
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 525px) {
+  .headingtext {
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+  }
 }
