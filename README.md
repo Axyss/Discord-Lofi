@@ -8,30 +8,30 @@
 
 </p>
 <p align="center">
-<a href="https://github.com/TrishCX/Google-Image-Sr" target="_blank">
+<a href="https://github.com/rit3zh/Discord-Lofi" target="_blank">
     <img src="http://forthebadge.com/images/badges/built-with-love.svg"/>
   </a>
 </p>
 
   <p align="center">
 <p align="center">
-  <a href="https://github.com/TrishCX/Google-Image-Sr" target="_blank">
+  <a href="https://github.com/rit3zh/Discord-Lofi" target="_blank">
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Build Status">
   </a>
-  <a href="https://github.com/TrishCX/Google-Image-Sr" target="_blank">
+  <a href="https://github.com/rit3zh/Discord-Lofi" target="_blank">
     <img src="https://img.shields.io/badge/License-Boost_1.0-lightblue.svg" alt="Codecov" />
   </a>
-  <a href="https://github.com/TrishCX/Google-Image-Sr" target="_blank">
+  <a href="https://github.com/rit3zh/Discord-Lofi" target="_blank">
     <img src="https://img.shields.io/badge/License-ISC-blue.svg" alt="License">
   </a>
-  <a href="https://github.com/TrishCX/Google-Image-Sr" target="_blank">
+  <a href="https://github.com/rit3zh/Discord-Lofi" target="_blank">
     <img src="https://badgen.net/github/release/Naereen/Strapdown.js" alt="License">
   </a>
 
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/google-image-sr" target="_blank">
+  <a href="https://www.buymeacoffee.com/rit3zh" target="_blank">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" />
   </a>
   
@@ -52,7 +52,7 @@
 
 ```bash
 # cloning the repository.
-> $ git clone https://github.com/rit3zh/DiscordLofiBot
+> $ git clone https://github.com/rit3zh/Discord-Lofi
 
 #   Navigating inside the folder.
 > $ cd DiscordLofiBot
@@ -93,7 +93,7 @@ cd website
 npm install --save
 
 # Starting the development server.
-npm start # using yarn? --> yarn run dev
+npm start # using yarn? --> yarn start
 ```
 
 ### Server
@@ -112,12 +112,12 @@ npm start # using yarn? --> yarn run dev
 
 #### Click the button below to deploy this project to Heroku.
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TrishCX/AnimeCrix/tree/main)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/rit3zh/Discord-Lofi)
 
 ## 🤝 Contributing
 
 1.  [Fork this repository]()
-2.  Clone your fork: git clone https://github.com/your-username/evobot.git
+2.  Clone your fork: git clone https://github.com/rit3zh/Discord-Lofi
 3.  Create your feature branch: git checkout -b something new
 4.  Stage changes git add .
 5.  Commit your changes: `npm run commit` or `cz`
