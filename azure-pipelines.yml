@@ -1,0 +1,26 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+strategy:
+  matrix:
+    Node_14:
+      node_version: '14.x'
+    Node_16:
+      node_version: '16.x'
+    Node_18:
+      node_version: '18.x'
+      Node_20:
+      node_version: '20.x'
+steps:
+- task: UseNode@1
+  inputs:
+    version: $(node_version)
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run dev
+  displayName: 'Install dependencies and run development server'

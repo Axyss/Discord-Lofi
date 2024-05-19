@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "schedule": [
+    "before 2am on Monday"
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "*"
+      ],
+      "groupName": "all dependencies",
+      "automerge": true
+    }
+  ]
+}

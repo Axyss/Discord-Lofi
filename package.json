@@ -14,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@commitlint/config-conventional": "19.2.2",
     "@discordjs/opus": "^0.9.0",
     "@discordjs/voice": "^0.17.0",
     "chalk": "^4.1.2",
