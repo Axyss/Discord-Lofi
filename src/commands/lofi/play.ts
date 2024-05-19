@@ -29,7 +29,9 @@ export default new Command({
     const station = interaction.options
       .get("station")
       ?.value?.toString() as string
-    const id = await useYouTube(`${station} ${Constants.QUERY}`)
+    const id = await useYouTube(`${station} ${Constants.QUERY}`, {
+      continuation: Math.random() < 0.5,
+    })
     const baseURI = `${Constants.YOUTUBE_BASE_URL}?list=${id}`
     interaction.followUp({
       embeds: [

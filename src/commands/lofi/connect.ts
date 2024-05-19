@@ -8,7 +8,7 @@ export default new Command({
   sameVoiceChannel: true,
   voiceConnected: true,
   run: async ({ client, interaction }) => {
-    const connection = getVoiceConnection(interaction.guildId as string)
+    const connection = player.voices.get(interaction.guildId!)
     if (connection)
       return interaction.reply({
         embeds: [
@@ -20,12 +20,8 @@ export default new Command({
         ],
         ephemeral: true,
       })
-    joinVoiceChannel({
-      adapterCreator: interaction.guild?.voiceAdapterCreator!,
-      channelId: interaction.member.voice.channelId as string,
-      guildId: interaction.guildId as string,
-      selfDeaf: true,
-    })
+    player.voices.join(interaction.member.voice.channel!)
+
     return interaction.reply({
       embeds: [
         makeEmbed({

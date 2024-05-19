@@ -8,7 +8,7 @@ export default new Command({
   sameVoiceChannel: true,
   voiceConnected: true,
   run: async ({ client, interaction }) => {
-    const connection = getVoiceConnection(interaction.guildId as string)
+    const connection = player.voices.get(interaction.guildId as string)
     if (!connection)
       return interaction.reply({
         embeds: [
@@ -20,7 +20,7 @@ export default new Command({
         ],
         ephemeral: true,
       })
-    connection.destroy()
+    player.voices.leave(interaction.guildId as string)
     return interaction.reply({
       embeds: [
         makeEmbed({

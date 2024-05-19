@@ -22,6 +22,7 @@ export async function useYouTube(query: string, options?: Options) {
   } else {
     const content = videos.results
     const shuffled = shuffleArray(content!)
+
     const randomizePlaylistID = shuffled[
       Math.floor(Math.random() * shuffled.length)
     ].id?.replace("VL", "")

@@ -52,7 +52,7 @@ export default class Client extends AppClient {
   init() {
     this.logger.info(chalk.cyan.bold("Registering Modules"))
     this.registerModules()
-
+    this.connectDatabase()
     this.login(process.env.token).then(() => {
       this.logger.success(
         `Logged in as ${chalk.reset.white.bold(
@@ -69,8 +69,15 @@ export default class Client extends AppClient {
         message: "No Mongoose uri specified.",
         name: "MongoDB not connected.",
       })
-    await mongoose.connect(process.env.connectionURI as string)
-    return this.logger.success(`✅ Successfully connected MongoDB`)
+    try {
+      await mongoose.connect(process.env.connectionURI as string)
+      return this.logger.success(`✅ Successfully connected MongoDB`)
+    } catch (e) {
+      this.logger.error({
+        message: "No Mongoose uri specified.",
+        name: "MongoDB not connected.",
+      })
+    }
   }
   async registerModules() {
     const slashCommands: ApplicationCommandDataResolvable[] = []

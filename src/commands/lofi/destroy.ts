@@ -10,7 +10,7 @@ export default new Command({
   sameVoiceChannel: true,
   run: async ({ client, interaction }) => {
     const queue = player.getQueue(interaction.guildId as string)
-    player.deleteQueue(queue!)
+    queue?.stop()
     const embed = makeEmbed({
       client,
       _message: `The queue is now destroyed.`,
