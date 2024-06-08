@@ -3,4 +3,6 @@ import { getInteractionFromSong } from "../helper/getInteractionFromSong"
 import { player } from "../instances/playerInstance"
 import { EmbedBuilder, ColorResolvable } from "discord.js"
 
-player.on("addList", async (queue, playlist) => {})
+player.on("playSong", async (queue, song) => {
+  console.log(song)
+})

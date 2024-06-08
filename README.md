@@ -123,3 +123,7 @@ npm start # using yarn? --> yarn start
 5.  Commit your changes: `npm run commit` or `cz`
 6.  Push to the branch: git push origin something new
 7.  Submit a pull request.
+
+## 📜 Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for details about the changes in each version.

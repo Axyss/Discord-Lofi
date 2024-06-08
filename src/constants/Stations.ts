@@ -19,4 +19,9 @@ export const Stations: StationsType[] = [
     name: "rain",
     value: "rain",
   },
+
+  {
+    name: "remix",
+    value: "remix",
+  },
 ]
